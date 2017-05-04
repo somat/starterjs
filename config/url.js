@@ -18,4 +18,7 @@ url.setting = url.backend.concat('settings');
 url.user_list = url.backend.concat('users');
 url.user_add = url.backend.concat('user/add');
 
+// Redirect if loggedin
+url.loggedin_redirect = url.dashboard;
+
 module.exports = url;

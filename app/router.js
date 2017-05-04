@@ -20,7 +20,7 @@ router.get(urlhelper.base, home.index);
 
 // Auth
 router.get(urlhelper.login, auth.login);
-router.post(urlhelper.login, passport.authenticate('local'), auth.doLogin);
+router.post(urlhelper.login, auth.doLogin);
 router.get(urlhelper.logout, auth.doLogout);
 
 // ---- Member ----
