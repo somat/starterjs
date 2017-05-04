@@ -4,8 +4,8 @@ var passport = require('passport');
 var home = require('./controllers/home');
 var auth = require('./controllers/auth');
 
-var user = require('./controllers/backend/user');
-var dashboard = require('./controllers/backend/dashboard');
+var user = require('./controllers/admin/user');
+var dashboard = require('./controllers/admin/dashboard');
 
 var isauth = require('../helpers/isauth');
 var isadmin = require('../helpers/isadmin');

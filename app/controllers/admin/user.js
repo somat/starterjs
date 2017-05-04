@@ -20,7 +20,7 @@ UserController.index = function(req, res) {
     .then(
         function(result) {
             res.render(
-                'backend/user/index',
+                'admin/user/index',
                 {
                     title: 'Users',
                     users: result.docs,
@@ -38,7 +38,7 @@ UserController.index = function(req, res) {
 }
 
 UserController.add = function(req, res) {
-    res.render('backend/user/add', {
+    res.render('admin/user/add', {
         title: 'Add User',
         csrf: req.csrfToken()
     });
