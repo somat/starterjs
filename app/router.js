@@ -9,7 +9,7 @@ var dashboard = require('./controllers/backend/dashboard');
 
 var isauth = require('../helpers/isauth');
 var isadmin = require('../helpers/isadmin');
-var config = require('../config');
+var config = require('../config/config');
 
 var urlhelper = require('../helpers/urlhelper');
 var upload = require('../helpers/upload');

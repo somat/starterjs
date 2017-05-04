@@ -1,5 +1,3 @@
-var config = require('../config');
+var url = require('../config/url');
 
-var urllib = config.url;
-
-module.exports = urllib;
+module.exports = url;
