@@ -46,8 +46,10 @@ app.use(validator());
 app.use(session({
   secret: config.session_secret,
   resave: false,
+  rolling: true,
   saveUninitialized: false,
-  store: new MongoStore({ mongooseConnection: mongoose.connection })
+  store: new MongoStore({ mongooseConnection: mongoose.connection }),
+  cookie: {maxAge: 900000}
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
